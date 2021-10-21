@@ -1,0 +1,1 @@
+# practice-for-week-15-react-thunk-pokedex-long-practice
