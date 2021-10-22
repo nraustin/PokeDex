@@ -219,8 +219,8 @@ catch the response thrown from the thunk action in the `CreatePokemonForm`
 component.
 
 Create a component state variable in the `CreatePokemonForm` to hold the errors
-thrown as an error from the thunk action. The state variable should be an object
-which has a key for each input field that returned an error message.
+thrown from the thunk action. The state variable should be an object which has a
+key for each input field that returned an error message.
 
 If there is an error message for an input field, render the message right under
 the input field using the `ErrorMessage` component. You should make sure that
