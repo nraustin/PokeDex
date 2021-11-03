@@ -39,7 +39,7 @@ const PokemonBrowser = () => {
                 <div>
                   <div className="primary-text">{pokemon.name}</div>
                   <div className="secondary-text">
-                    {pokemon.no} {pokemon.captured && "(Captured)"}
+                    {pokemon.number} {pokemon.captured && "(Captured)"}
                   </div>
                 </div>
               </div>

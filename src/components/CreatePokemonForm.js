@@ -7,7 +7,7 @@ const CreatePokemonForm = ({ hideForm }) => {
   const pokeTypes = useSelector(state => state.pokemon.types);
   const dispatch = useDispatch();
   const history = useHistory();
-  const [no, setNo] = useState(1);
+  const [number, setNumber] = useState(1);
   const [attack, setAttack] = useState('');
   const [defense, setDefense] = useState('');
   const [imageUrl, setImageUrl] = useState('');
@@ -16,7 +16,7 @@ const CreatePokemonForm = ({ hideForm }) => {
   const [move1, setMove1] = useState('');
   const [move2, setMove2] = useState('');
 
-  const updateNo = (e) => setNo(e.target.value);
+  const updateNumber = (e) => setNumber(e.target.value);
   const updateAttack = (e) => setAttack(e.target.value);
   const updateDefense = (e) => setDefense(e.target.value);
   const updateImageUrl = (e) => setImageUrl(e.target.value);
@@ -39,7 +39,7 @@ const CreatePokemonForm = ({ hideForm }) => {
     e.preventDefault();
 
     // const payload = {
-    //   no,
+    //   number,
     //   attack,
     //   defense,
     //   imageUrl,
@@ -70,8 +70,8 @@ const CreatePokemonForm = ({ hideForm }) => {
           placeholder="Number"
           min="1"
           required
-          value={no}
-          onChange={updateNo} />
+          value={number}
+          onChange={updateNumber} />
         <input
           type="number"
           placeholder="Attack"

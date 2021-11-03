@@ -44,7 +44,7 @@ const initialState = {
 
 const sortList = (list) => {
   return list.sort((pokemonA, pokemonB) => {
-    return pokemonA.no - pokemonB.no;
+    return pokemonA.number - pokemonB.number;
   }).map((pokemon) => pokemon.id);
 };
 
