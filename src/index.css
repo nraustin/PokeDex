@@ -150,6 +150,8 @@ td.centered {
 
 .nav-entry-image {
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   border: 4px solid #DFDFDF;
   border-radius: 60px;
   height: 60px;
